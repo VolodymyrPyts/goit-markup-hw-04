@@ -104,6 +104,9 @@ img {
 }
 
 .head-nav-list {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
   margin-right: 50px;
 }
 
@@ -113,6 +116,19 @@ img {
 
 .active-page {
   color: var(--secondary-button-color);
+}
+.link-email {
+  width: 16px;
+  height: 12px;
+  align-items: center;
+  fill: currentColor;
+}
+
+.link-phon {
+  width: 10px;
+  height: 16px;
+  align-items: center;
+  fill: currentColor;
 }
 
 .head-adress {
@@ -156,7 +172,7 @@ img {
     ),
     url(../images/hero.jpg);
   background-position: center;
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
 }
 
