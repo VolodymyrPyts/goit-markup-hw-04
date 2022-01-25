@@ -358,7 +358,7 @@ img {
   height: 20px;
 }
 /* сектор наши клиенты */
-/* .our-partner {
+.our-partner {
   margin-bottom: 50px;
 }
 
@@ -367,9 +367,14 @@ img {
 }
 .partner-list-icon {
   flex-basis: calc((100%-150px) / 6);
-  padding: 16px 32px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-right: 30px;
 
+  fill: var(--socset-fill-color);
+  cursor: pointer;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -378,17 +383,21 @@ img {
   margin-right: 0;
 }
 
+.partner-list-icon:hover,
+.partner-list-icon:focus {
+  fill: var(--secondary-button-color);
+  border-color: ;
+}
 .partner-links {
-  display: block;
+  display: flex;
+  height: 60px;
 }
 
 .partner-icon {
-  width: 160px;
-  height: 60px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-} */
+  /* background-size: cover; */
+}
 /*сектор footer*/
 
 .span-logo-footer {
