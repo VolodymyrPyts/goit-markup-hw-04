@@ -96,6 +96,7 @@ img {
 
 .head-nav {
   display: flex;
+  color: var(--first-color-text);
 }
 .head-nav-link {
   font-size: 16px;
@@ -328,6 +329,7 @@ img {
 .social-icons {
   display: flex;
   justify-content: center;
+  /* fill: var(--socset-fill-color); */
 }
 
 .team-social-list {
@@ -338,7 +340,6 @@ img {
   height: 44px;
   border-radius: 50%;
   cursor: pointer;
-
   fill: var(--socset-fill-color);
 }
 
@@ -356,7 +357,38 @@ img {
   width: 20px;
   height: 20px;
 }
+/* сектор наши клиенты */
+/* .our-partner {
+  margin-bottom: 50px;
+}
 
+.partner-list {
+  display: flex;
+}
+.partner-list-icon {
+  flex-basis: calc((100%-150px) / 6);
+  padding: 16px 32px;
+  margin-right: 30px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.partner-list-icon:last-child {
+  margin-right: 0;
+}
+
+.partner-links {
+  display: block;
+}
+
+.partner-icon {
+  width: 160px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 /*сектор footer*/
 
 .span-logo-footer {
