@@ -5,6 +5,7 @@
 /* цвет кнопок главный #F5F4FA */
 /* цвет кнопок вспомогательны #2196F3 */
 /*цвет лого #000000 */
+/* цвет соцсетей #AFB1B8 */
 /*рамка*/
 
 :root {
@@ -16,6 +17,7 @@
   --secondary-button-color: #2196f3;
   --logo-color: #000000;
   --border-color: #eeeeee;
+  --socset-fill-color: #afb1b8;
 }
 
 body {
@@ -237,16 +239,9 @@ img {
   background-color: var(--first-button-color);
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
 }
-.link-antena {
-  /* width: 270px; */
 
-  /* height: 120px; */
-  background-color: var(--first-button-color);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: co;
-}
 .our-work-list:last-child {
   margin-right: 0;
 }
@@ -323,7 +318,43 @@ img {
 
 .team-block {
   padding-top: 30px;
+  padding-bottom: 16px;
+}
+
+.team-social {
   padding-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  fill: var(--socset-fill-color);
+}
+
+.team-social-list:not(:first-child) {
+  margin-left: 10px;
+}
+
+.team-social-list:hover,
+.team-social-list:focus {
+  background-color: var(--secondary-button-color);
+  fill: var(--first-fon-color);
+}
+
+.link-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /*сектор footer*/
