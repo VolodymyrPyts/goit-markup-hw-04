@@ -138,6 +138,8 @@ img {
 }
 
 .head-nav-contact {
+  display: flex;
+  align-items: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.14;
@@ -163,7 +165,7 @@ img {
   padding-bottom: 200px;
   text-align: center;
   margin: 0 auto;
-  height: 600px;
+
   max-width: 1600px;
 
   background-image: linear-gradient(
@@ -173,7 +175,7 @@ img {
     ),
     url(../images/hero.jpg);
   background-position: center;
-  /* background-size: cover; */
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -286,6 +288,7 @@ img {
   background-color: var(--first-button-color);
 }
 .my-work {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -319,10 +322,6 @@ img {
 
 .team-block {
   padding-top: 30px;
-  padding-bottom: 16px;
-}
-
-.team-social {
   padding-bottom: 30px;
 }
 
@@ -333,30 +332,31 @@ img {
 }
 
 .team-social-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  cursor: pointer;
-  fill: var(--socset-fill-color);
 }
 
 .team-social-list:not(:first-child) {
   margin-left: 10px;
 }
 
-.team-social-list:hover,
-.team-social-list:focus {
+.link-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  fill: var(--socset-fill-color);
+}
+
+.link-icon:hover,
+.link-icon:focus {
   background-color: var(--secondary-button-color);
   fill: var(--first-fon-color);
 }
 
-.link-icon {
-  width: 20px;
-  height: 20px;
-}
 /* сектор наши клиенты */
 .our-partner {
   margin-bottom: 50px;
@@ -366,12 +366,21 @@ img {
   display: flex;
 }
 .partner-list-icon {
-  flex-basis: calc((100%-150px) / 6);
-  padding-bottom: 16px;
-  padding-top: 16px;
-  padding-left: 30px;
-  padding-right: 30px;
   margin-right: 30px;
+  width: 170px;
+  height: 92px;
+}
+
+.partner-list-icon:last-child {
+  margin-right: 0;
+}
+
+.partner-links {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 
   fill: var(--socset-fill-color);
   cursor: pointer;
@@ -379,18 +388,10 @@ img {
   border-radius: 4px;
 }
 
-.partner-list-icon:last-child {
-  margin-right: 0;
-}
-
-.partner-list-icon:hover,
-.partner-list-icon:focus {
+.partner-links:hover,
+.partner-links:focus {
   fill: var(--secondary-button-color);
   border-color: var(--secondary-button-color);
-}
-.partner-links {
-  display: flex;
-  height: 60px;
 }
 
 .partner-icon {
@@ -464,8 +465,8 @@ img {
 .footer-icon {
   fill: var(--first-fon-color);
 }
-.team-social-list {
-  background-color: rgba(255, 255, 255, 0.1);
+.team-social-list > .team-social-list {
+  fill: rgba(255, 255, 255, 0.1);
 }
 
 /*Portfolio*/
@@ -562,4 +563,14 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+}
+
+.project-card:hover,
+.project-card:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-link:hover,
+.card-link:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
